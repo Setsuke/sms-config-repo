@@ -1,17 +1,12 @@
-propiedad.ejemplo: "CONFIGURACION POR DEFAULT"
+propiedad.ejemplo: "CONFIGURACION POR DEFAULT DESDE GIT :-)"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform:  "postgres"
 spring.jpa.show-sql: "true"
 spring.database.driverClassName: "org.postgresql.Driver"
-spring.datasource.url: "jdbc:postgresql://localhost:5432/fintech"
+spring.datasource.url: "jdbc:postgresql://database:5432/fintech"
 spring.datasource.username: "postgres"
-spring.datasource.password: "postgres"
+spring.datasource.password: "{cipher}d9a3214b40efb745647232291abfd68053a7021fc75b14a43bc5fb150b25cef3"
+# spring.datasource.password: "postgres"
 spring.datasource.testWhileIdle: "true"
 spring.datasource.validationQuery: "SELECT 1"
 spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
-
-## Agregado
-spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: false
-# Mostrar el detalle de la salud de un servicio
-management.endpoint.health.show-details: always
-management.endpoints.web.exposure.include: "*"
